@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body ,html {
+    height: auto; /* ตั้งค่าให้ auto เพื่อให้สามารถเลื่อนได้ */
+    overflow: auto; /* ทำให้สามารถเลื่อนได้ */
+    width: 100%;
+    background-color: #FCFCFC;
+    font-family: 'Kanit' ,sans-serif;
+}
+
+.conMain {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: 20px 60px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    position: relative;
+    /* background-color: red; */
+    margin-top: 100px;
+    margin-bottom: 60px;
+
+}
+
+.conNavbar {
+    z-index: 99999;
+}
+
+.conName {
+    width: 100%;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    /* background-color: yellow; */
+}
+
+.edtname ,.edttype {
+    font-family: 'Kanit' ,sans-serif;
+    height: 70px;
+    padding: 3px 15px;
+    /* margin: 8px 0; */
+    box-sizing: border-box;
+    font-size: 26px;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9; 
+    outline: none;
+    /* transition: border-color 0.3s, box-shadow 0.3s; */
+}
+
+.edttype {
+    width: 280px;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* background-color: #A7C957; */
+    /* background-color: #FFB7C5; */
+    background-color: #FFF3B0;
+    /* background-color: #A2C1E1; */
+    /* background-color: rgb(112, 186, 235); */
+    text-align: center;
+}
+
+.edtname {
+    width: 100%;
+    border-left: 1px solid #ddd;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* .edtname:focus ,.edttype:focus {
+    border-color: #66afe9; 
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); 
+    outline: none; 
+}
+
+.edtname::placeholder ,.edttype::placeholder {
+    color: #999; 
+    font-style: italic; 
+} */
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 6px 10px;
+    position: fixed;
+    bottom: 0px;
+    font-size: 12px;
+    box-shadow: 0px 0px 10px rgba(red, green, blue, alpha);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% -20px);
+
+    span {
+        color: #d4a537;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0px 5px;
+    }
+}

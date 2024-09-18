@@ -1,0 +1,61 @@
+.navbar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(90deg, #f0c75e, #e4a048); /* ไล่สีทอง */
+    border-bottom: 3px solid #c2923b; /* ขอบล่างสีทองเข้ม */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Kanit' ,sans-serif;
+    position: fixed;
+    top: 0px;
+    z-index: 99999;
+}
+
+.nav-first {
+    display: flex;
+    align-items: center;
+}
+
+.icon-exit {
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    /* color: #FFF; */
+}
+
+.icon-exit:hover {
+    transform: scale(1.15);
+}
+
+.watname {
+    margin-left: 15px;
+}
+
+.navbar-logo img {
+    height: 70px; /* ขยายขนาดโลโก้เล็กน้อย */
+    width: 70px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar-menu a:hover {
+    color: #ffd700; /* สีเหลืองทองสดใส */
+    transform: scale(1.1); /* ขยายขนาดเล็กน้อยเมื่อวางเมาส์ */
+    background-color: rgba(255, 255, 255, 0.2); /* เพิ่มพื้นหลังโปร่งแสง */
+}

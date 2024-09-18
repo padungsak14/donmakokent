@@ -1,0 +1,228 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #FCFCFC;
+    font-family: 'Kanit' ,sans-serif;
+}
+
+/* nav {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    padding: 0; 
+    background-image: url('Images/navbar_wat3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 18 / 5; 
+} */
+
+
+.nav_bg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    z-index: -10;
+
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.watname {
+    margin-left: 15px;
+}
+
+/* .edtname {
+    font-family: 'Kanit' ,sans-serif;
+    padding: 10px 15px;
+    outline: none;
+} */
+
+main {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+    /* border: 2px solid #ccc; */
+    border-radius: 10px;
+    box-shadow: 0px 0px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+colgroup col:nth-child(1) ,
+colgroup col:nth-child(4) {
+    width: 5%;
+    min-width: 60px;
+}
+
+colgroup col:nth-child(2) {
+    width: 55%;
+}
+
+colgroup col:nth-child(3) {
+    width: 35%;
+}
+
+thead {
+    border-radius: 100px;
+    
+}
+
+th {
+    background-color: #CD7F32;
+    padding: 15px 10px;
+    /* border: 1px solid #ccc; */
+    font-size: 18px;
+}
+
+th:nth-child(1),
+th:nth-child(4) {
+    text-align: center;
+}
+
+/* tr:nth-child(even) {
+    background-color: #f2f2f2;
+} */
+
+tr:hover {
+    background-color: #f3f3f3; 
+}
+
+td {
+    padding: 5px 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+
+td:nth-child(1),
+td:nth-child(4) {
+    text-align: center;
+
+}
+
+.icon-add,
+.icon-del {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+
+.con-input-all {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0px 20px;
+    padding: 10px;
+}
+
+
+.edttype {
+    width: 200px;
+}
+
+.edtname {
+    width: 100%;
+}
+
+.edtname ,.edttype {
+    font-family: 'Kanit' ,sans-serif;
+    padding: 3px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 2px solid #ddd; /* ขอบสีเทาอ่อน */
+    border-radius: 5px; /* มุมโค้ง */
+    background-color: #f9f9f9; /* พื้นหลังสีอ่อน */
+    transition: border-color 0.3s, box-shadow 0.3s; /* เพิ่ม Transition เพื่อความนุ่มนวล */
+}
+
+.edtname:focus ,.edttype:focus {
+    border-color: #66afe9; /* เปลี่ยนสีขอบเมื่อโฟกัส */
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* เพิ่มเงาเมื่อโฟกัส */
+    outline: none; /* เอาขอบสีฟ้าที่เด้งเมื่อโฟกัสออก */
+}
+
+.edtname::placeholder ,.edttype::placeholder {
+    color: #999; /* สีของ placeholder */
+    font-style: italic; /* เปลี่ยนฟอนต์เป็นตัวเอียง */
+}
+
+.conConfirm {
+    width: 100%;
+    text-align: end;
+    margin: 20px 0px;
+}
+
+.btn-submit {
+    width: 200px;
+    background: linear-gradient(to right, #d4a537, #e4b84d); 
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Kanit' ,sans-serif;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(to right, #e4b84d, #d4a537);
+    transform: scale(1.05); 
+}
+
+.btn-submit:active {
+    background-color: #a9782c;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 6px 10px;
+    position: fixed;
+    bottom: 0px;
+    font-size: 12px;
+    box-shadow: 0px 0px 10px rgba(red, green, blue, alpha);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% -20px);
+
+    span {
+        color: #d4a537;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0px 5px;
+    }
+}

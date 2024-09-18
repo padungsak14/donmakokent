@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://BaByBossz.github.io;">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Wat Don Makok</title>
+</head>
+<body>
+    <div id="conNavbar"></div>
+
+    <main id="conmain">
+        <table id="contable">
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>เพิ่ม</th>
+                    <th>ชื่อ - นามสกุล</th>
+                    <th>สถานะ</th>
+                    <th>ลบ</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbody">
+                <tr>
+                    <td><i id="icon_add" class="fa-solid fa-plus icon-add"></i></td>
+                    <td><input type="text" name="" id="edtname" class="edtname" placeholder="ระบุชื่อ - นามสกุล"></td>
+                    <td><input type="text" name="" id="edttype" class="edtname" placeholder="ระบุสถานะ เช่น ประธาน"></td>
+                    <td><i id="icon_del" class="fa-solid fa-trash-can icon-del"></i></td>
+                </tr>
+
+                <tr>
+                    <td><i id="icon_add" class="fa-solid fa-plus icon-add"></i></td>
+                    <td><input type="text" name="" id="edtname" class="edtname" placeholder="ระบุชื่อ - นามสกุล"></td>
+                    <td><input type="text" name="" id="edttype" class="edtname" placeholder="ระบุสถานะ เช่น ประธาน"></td>
+
+                    <td><i id="icon_del" class="fa-solid fa-trash-can icon-del"></i></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="conConfirm">
+            <button id="btn-submit" class="btn-submit">
+                <i class="fa fa-check"></i> ตกลง
+            </button>
+        </div>
+    </main>
+    
+
+    <footer>
+        เว็บไซต์นี้จัดทำขึ้นเพื่อสนับสนุนการทำงานของวัด โดยได้รับการสร้างและพัฒนาโดย
+        <span> นายผดุงศักดิ์ วงศ์ษาโรจน์ และครอบครัวฯ </span>
+        เพื่อเป็นการบริจาคให้กับวัดดอนมะกอก
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
