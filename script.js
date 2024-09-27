@@ -25,25 +25,25 @@ conmain.addEventListener('click' ,function(e) {
         icon_add_new.id = 'icon_add';
         icon_add_new.className = 'fa-solid fa-plus icon-add';
 
-        let edttype_new = document.createElement('input');
-        edttype_new.id = 'edttype';
-        edttype_new.type = 'text';
-        edttype_new.className = 'edtname';
-        edttype_new.placeholder = 'ระบุสถานะ เช่น ประธาน';
-
         let edtname_new = document.createElement('input');
         edtname_new.id = 'edtname';
         edtname_new.type = 'text';
         edtname_new.className = 'edtname';
         edtname_new.placeholder = 'ระบุชื่อ - นามสกุล';
 
+        let edttype_new = document.createElement('input');
+        edttype_new.id = 'edttype';
+        edttype_new.type = 'text';
+        edttype_new.className = 'edtname';
+        edttype_new.placeholder = 'ระบุสถานะ เช่น ประธาน';
+
         let icon_del_new = document.createElement('i');
         icon_del_new.id = 'icon_del';
         icon_del_new.className = 'fa-solid fa-trash-can icon-del';
 
         td1.appendChild(icon_add_new);
-        td2.appendChild(edttype_new);
-        td3.appendChild(edtname_new);
+        td2.appendChild(edtname_new);
+        td3.appendChild(edttype_new);
         td4.appendChild(icon_del_new);
 
         tr.append(td1 ,td2 ,td3 ,td4);
